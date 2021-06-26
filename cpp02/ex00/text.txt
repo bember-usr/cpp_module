@@ -1,0 +1,62 @@
+не принято обращаться к элементам-данным из-вне. это нарушает принцип инкапсуляции.
+элементы-данные всегда приватные
+получить информацию Get_чтополучить в публичном поле
+this - указатель объекта класса на самого себя
+(
+    если есть
+    class Point {
+        public:
+            Print() { cout << "Print"}
+            указатель this для объекта класса a будет хранить в себе адрес на ячейку
+            памяти, выделенную под объект класса а. У каждого объекта свой this
+    }
+    Point a;
+    a.Print();
+)
+когда вызывается конструктор копирования:
+1)
+void Foo(Point a)//так как происходит копирование элемента, деструктор будет не как
+для объекта, который мы создали в main
+{}
+
+int main()
+{
+    Point a;
+    Foo(a);
+}
+
+2)
+Вызовется 2 конструктора и один деструктор
+int main()
+{
+    Point a;
+    Point b(a);//конструктор копирования
+}
+
+3)
+Point Foo()
+{
+    Point a;
+    return (a);
+}
+
+int main()
+{
+    Foo();//так как мы не присваиваем значение, то Foo заменяется на возвращаемое значение
+    вызывается конструктор копирования
+}
+
+Default constructor called
+Copy constructor called
+Assignation operator called
+getRawBits member function called
+Default constructor called
+Assignation operator called
+getRawBits member function called
+getRawBits member function called
+0
+getRawBits member function called
+0
+getRawBits member function called
+0
+Destructor called

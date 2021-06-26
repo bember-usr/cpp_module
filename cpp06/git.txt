@@ -1,0 +1,5 @@
+http://phoenix.yizimg.com/t0mm4rx/piscine_cpp/tree/master/day06/ex00
+
+https://github.com/Glagan/42-CPP-Module/tree/master/06/ex02
+
+https://gitlab.com/alallema/piscine-cpp-42/-/blob/master/D06/ex01
